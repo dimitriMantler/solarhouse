@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Admin Control - Add Producer</title>
+	<link rel="stylesheet" type="text/css" href="./style/login.css">
+</head>
+<body>
+<div class="center"> 
+	<h1>Add Producer Process</h1>
+	<div class="form">		
+		<p>Level:  <input type="text" name="lvl" title="Start level ist 1"/></p>
+		<p>Name:  <input type="text" name="name" title="Name des neuen Gerätes"/></p>
+		<p>PicPath:  <input type="text" name="picpath" title="Der Pfad auf dem Server, z.B. meinServer/bilder/bildName  OHNE Dateiendung!"/></p>
+		<p>Price:  <input type="text" name="price" title="z.B.  420"/></p>
+		<p>Tooltip:  <textarea name="tooltip" cols="50" rows="5" titel="Eine kleine Beschreibung des Gerätes, sollte nicht größer als 255 Zeichen sien"></textarea>		
+		<p>Watt:  <input type="text" name="watt" Die Produzierten Watt/></p>
+		<p>Position: <input type="text" name="position" title="Position an der das Gerät steht: 1,2,3"/></p>
+		<p>X:  <input type="text" name="x" title="Die X Koordinate wo das Gerät nachher angezeigt werden soll" /></p>
+		<p>Y:  <input type="text" name="y" title="Die Y Koordinate wo das Gerät nachher angezeigt werden soll"/></p>
+				
+		<hr style="background: black; height: 5px;" />
+		
+		<p><b><u>Admin Login Daten</u></b></p>
+		<p>E-Mail:  <input type="text" name="email" title="z.B. ich@mail.de"/></p>
+		<p>Passwort:<input type="password" name="password" /></p>
+		<p><button id="submit" name="submit">Abschicken</button></p>		
+		<div class="message"></div>
+	</div>
+</div>
+	<!--Engines-------------------------------------------------------------------------------------------------------->
+	<script type="text/javascript" src="../script/util/JQuery.js"></script>
+	<!--Logic Scripts D4wN--------------------------------------------------------------------------------------------->
+	<script type="text/javascript" src="../script/connection/adminProducer.js"></script>
+	<script type="text/javascript" src="../script/connection/Connector.js"></script>
+	<script type="text/javascript" src="../script/util/DEBUG.js"></script>
+	<script type="text/javascript" src="../script/util/Utility.js"></script>
+	<script type="text/javascript" src="../script/connection/loginRegisterFuncs.js"></script>
+	<script type="text/javascript" src="../script/util/vars.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Register Hyperion</title>
+	<link rel="stylesheet" type="text/css" href="./style/login.css">
+</head>
+<body>
+<div class="center"> 
+	<h1>Benutzeränderung für Projekt Hyperion</h1>
+	<div class="form">
+		<div class="message"></div>
+		<p>E-Mail:  <input type="text" name="email" title="z.B. ich@mail.de" /></p>
+		<p>Passwort:<input type="password" name="password" /></p>	
+		<p> Sind Sie sich wirklich sicher?</p>
+		<p>
+   			JA <input type="radio" name="radio" value="ja" > | 
+   	 		<input type="radio" name="radio" value="nein" checked="checked"> NEIN
+  		</p>
+		<p><button id="submit" name="submit">Löschen</button></p>	
+		<div class="result"></div>		
+	</div>
+</div>
+
+	<!--Engines-------------------------------------------------------------------------------------------------------->
+	<script type="text/javascript" src="../script/util/JQuery.js"></script>
+	<!--Logic Scripts D4wN--------------------------------------------------------------------------------------------->
+	<script type="text/javascript" src="../script/connection/deleteScript.js"></script>
+	<script type="text/javascript" src="../script/connection/loginRegisterFuncs.js"></script>
+	<script type="text/javascript" src="../script/connection/Connector.js"></script>
+	<script type="text/javascript" src="../script/util/DEBUG.js"></script>
+	<script type="text/javascript" src="../script/util/Utility.js"></script>
+	<script type="text/javascript" src="../script/util/vars.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Admin Control - Add Consumer</title>
+	<link rel="stylesheet" type="text/css" href="./style/login.css">
+</head>
+<body>
+<div class="center"> 
+	<h1>Add Consumer Process</h1>
+	<div class="form">		
+		<p>Level:  <input type="text" name="lvl" title="Start level ist 1" /></p>
+		<p>Name:  <input type="text" name="name" title="Name des neuen Gerätes"/></p>
+		<p>PicPath:  <input type="text" name="picpath" title="Der Pfad auf dem Server, z.B. meinServer/bilder/bildName  OHNE Dateiendung!"/></p>
+		<p>Price:  <input type="text" name="price" title="z.B.  420"/></p>
+		<p>Tooltip:  <textarea name="tooltip" cols="50" rows="5" titel="Eine kleine Beschreibung des Gerätes, sollte nicht größer als 255 Zeichen sien"></textarea>
+		<p>Type:
+			<select name="ctype">
+				<option value="TV">TV</option>
+				<option value="Phone">Telefon</option>
+				<option value="Computer">Computer</option>
+				<option value="Eraser">Aktenvernichter</option>
+				<option value="Router">Router</option>
+				<option value="Hifi">Hifi Anlage</option>
+				<option value="Lavalamp">Lavalampe</option>
+				<option value="Console">Konsole</option>
+				<option value="Radio">Radio</option>
+				<option value="Fan">Ventilator</option>
+				<option value="Bed">Bett</option>
+				<option value="Tablet">Tablet</option>
+				<option value="Fridge">Kühlschrank</option>
+				<option value="Coffeemachine">Kaffemaschiene</option>
+				<option value="Cooker">Herd</option>
+				<option value="Microwave">Mikrowelle</option>
+				<option value="Dishwasher">Geschiespüler</option>
+				<option value="Kettle">Wasserkocher</option>
+			</select>			
+		</p>
+		<p>Watt:  <input type="text" name="watt" title="Die Verbrauchten Watt"/></p>
+		<p>X:  <input type="text" name="x" title="Die X Koordinate wo das Gerät nachher angezeigt werden soll" /></p>
+		<p>Y:  <input type="text" name="y" title="Die Y Koordinate wo das Gerät nachher angezeigt werden soll"/></p>
+		<p>Playerneeds Type:
+			<select name="pnType">
+				<option value="Tiredness">Müdigkeit</option>
+				<option value="Hunger">Hunger</option>
+				<option value="Lifestyle">Lifestyle</option>
+				<option value="Arbeit">Work</option>
+			</select>
+		</p>
+		<p>Needs Value:  <input type="text" name="pnValue" title="Ein Value welches bestimmt wie schnell das Bedürfniss erfüllt wird" /></p>	
+				
+		<hr style="background: black; height: 5px;" />
+		
+		<p><b><u>Admin Login Daten</u></b></p>
+		<p>E-Mail:  <input type="text" name="email" title="z.B. ich@mail.de" /></p>
+		<p>Passwort:<input type="password" name="password" /></p>
+		<p><button id="submit" name="submit">Abschicken</button></p>		
+		<div class="message"></div>
+	</div>
+</div>
+	<!--Engines-------------------------------------------------------------------------------------------------------->
+	<script type="text/javascript" src="../script/util/JQuery.js"></script>
+	<!--Logic Scripts D4wN--------------------------------------------------------------------------------------------->
+	<script type="text/javascript" src="../script/connection/adminConsumer.js"></script>
+	<script type="text/javascript" src="../script/connection/Connector.js"></script>
+	<script type="text/javascript" src="../script/util/DEBUG.js"></script>
+	<script type="text/javascript" src="../script/util/Utility.js"></script>
+	<script type="text/javascript" src="../script/connection/loginRegisterFuncs.js"></script>
+	<script type="text/javascript" src="../script/util/vars.js"></script>
+	
+</body>
+</html>
